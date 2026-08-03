@@ -514,18 +514,15 @@ be cited alongside it.</p>
 <p>See that getting-started vignette for the fuller treatment of PACTS,
 the cycle-time variables, data requirements, and GAMM specification;
 this walkthrough is a condensed, single-question companion to it.</p>
-<div id="before-you-start-installing" class="section level2">
-<h2>Before you start: installing</h2>
-<p>Run this once. It is the only step that needs the network, and it is
-worth doing before the session rather than during it:
-<code>menstrualcycleR</code> pulls around 60 dependencies on a fresh R
-installation, which takes minutes rather than seconds.</p>
+<div id="installing" class="section level2">
+<h2>Installing</h2>
+<p>Run this once, ahead of time. Allow a few minutes; on a fresh R
+installation it pulls around 60 packages.</p>
 <pre class="r"><code>install.packages(&quot;remotes&quot;)
 remotes::install_github(&quot;eisenlohrmoullab/menstrualcycleR&quot;)</code></pre>
-<p>Nothing else is needed. <code>mgcv</code> ships with R, and
-<code>ggplot2</code> arrives as a <code>menstrualcycleR</code>
-dependency. If that second line asks to update other packages, answering
-“none” is fine.</p>
+<p><code>mgcv</code> ships with R and <code>ggplot2</code> installs as a
+dependency, so there is nothing else to add. If R offers to update other
+packages, answering “none” is fine.</p>
 <pre class="r"><code>library(menstrualcycleR)  # pacts_scaling()
 library(mgcv)              # the GAMMs
 library(ggplot2)           # plots

@@ -8,23 +8,21 @@ cycle?*, and answers it twice on two different definitions of cycle time.
 or the [styled version](https://eisenlohrmoullab.github.io/saa-pacts-gam-symposium/pacts_gamm_walkthrough.html).
 Nothing to install.
 
-## Start here
+## Following along in the session
 
-**1. Install — please do this before the session.** It is the only step that needs the
-network, and conference wifi is where it goes wrong. In the R Console:
+**1. Install, ahead of time.** Allow a few minutes; on a fresh R installation this pulls
+around 60 packages. In the R Console:
 
 ```r
 install.packages("remotes")
 remotes::install_github("eisenlohrmoullab/menstrualcycleR")
 ```
 
-That is everything: `mgcv` ships with R and `ggplot2` comes along as a dependency. On a
-fresh R installation this pulls around 60 packages and takes minutes rather than seconds.
-If it offers to update other packages, answering "none" is fine. No compiler needed.
+`mgcv` ships with R and `ggplot2` installs as a dependency, so there is nothing else to
+add. If R offers to update other packages, answering "none" is fine. No compiler needed.
+Check it with `library(menstrualcycleR)`.
 
-Confirm it worked with `library(menstrualcycleR)`.
-
-**2. Get the file.** This drops it in your working directory rather than in Downloads:
+**2. Get the file.** In the R Console, which puts it in your working directory:
 
 ```r
 download.file(
@@ -36,12 +34,11 @@ download.file(
 Or open [`pacts_gamm_walkthrough.Rmd`](pacts_gamm_walkthrough.Rmd) above and use the
 **download raw file** button.
 
-**3. Run it.** Open it in RStudio and work down the document with the green ▶ at the top
-right of each code chunk, which is what we will do together. **Knit** runs the whole thing
-in about 15 seconds.
+**3. Open it in RStudio.** We will work down the document together, running each chunk
+with the green ▶ at its top right. To run everything at once instead, click **Knit**,
+which takes about 15 seconds.
 
-There is no dataset to fetch: the document simulates its own diary, so nothing can fail
-for want of a file.
+The data is simulated inside the document, so there is nothing else to download.
 
 ## What it does
 
