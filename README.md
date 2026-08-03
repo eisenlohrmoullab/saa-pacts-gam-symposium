@@ -4,9 +4,11 @@ Hands-on walkthrough from the CLEAR Lab's symposium at the Society for Ambulator
 Assessment, Vienna. It asks one question, *does positive affect track the menstrual
 cycle?*, and answers it twice on two different definitions of cycle time.
 
-**Only want to read it?** → **[the walkthrough, figures and all](pacts_gamm_walkthrough.md)**,
-or the [styled version](https://eisenlohrmoullab.github.io/saa-pacts-gam-symposium/pacts_gamm_walkthrough.html).
-Nothing to install.
+- **[Slides](https://docs.google.com/presentation/d/1Ed4DtK0ajwD_bCStSTWdhi1w3ostZREIco55KijPzAA/preview)**
+  — the symposium deck.
+- **[The walkthrough](pacts_gamm_walkthrough.md)**, figures and all — renders here in
+  GitHub with nothing to install, and also as a
+  [styled page](https://eisenlohrmoullab.github.io/saa-pacts-gam-symposium/pacts_gamm_walkthrough.html).
 
 ## Following along in the session
 
