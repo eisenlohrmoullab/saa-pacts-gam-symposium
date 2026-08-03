@@ -1,6 +1,5 @@
 ---
 title: "PACTS scaling and cyclic GAMMs"
-subtitle: "Why the definition of cycle time decides what you find"
 output:
   html_document:
     toc: false
@@ -14,6 +13,8 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE,
                       dpi = 200, fig.retina = 2)
 options(width = 92)   # keeps the model summaries from wrapping awkwardly
 ```
+
+**Why the definition of cycle time decides what you find**
 
 *Prepared by Tory Eisenlohr-Moul, PhD, and adapted from the larger `menstrualcycleR`
 vignette, ["Getting started with `menstrualcycleR`"](https://eisenlohrmoullab.github.io/menstrualcycleR/articles/menstrualcycleR-overview.html),

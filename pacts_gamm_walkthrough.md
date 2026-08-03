@@ -1,6 +1,8 @@
 PACTS scaling and cyclic GAMMs
 ================
 
+**Why the definition of cycle time decides what you find**
+
 *Prepared by Tory Eisenlohr-Moul, PhD, and adapted from the larger
 `menstrualcycleR` vignette, [“Getting started with
 `menstrualcycleR`”](https://eisenlohrmoullab.github.io/menstrualcycleR/articles/menstrualcycleR-overview.html),
