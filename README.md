@@ -42,22 +42,61 @@ produce an obviously wrong answer. It produces a clean null that one would belie
 
 All three come from the same `.Rmd` and the same seed, so the numbers agree.
 
-### Running it yourself
+## Running it yourself
 
 Everything is simulated inline, so there is no dataset to download and no data-access
-step. One file, three packages, about 15 seconds to knit.
+step. One file, and about 15 seconds to knit once you are set up.
 
-Clone or download the repo and open `saa-pacts-gam-symposium.Rproj` in RStudio, which
-sets the working directory for you. Then, in the Console:
+### Step 1 — install, before the session
+
+This is the only step that needs the network, and it is the one that goes wrong on
+conference wifi. Do it at home. In the R Console:
 
 ```r
-install.packages(c("mgcv", "ggplot2"))                    # mgcv ships with base R already
+install.packages("remotes")
 remotes::install_github("eisenlohrmoullab/menstrualcycleR")
-rmarkdown::render("pacts_gamm_walkthrough.Rmd")
 ```
 
-If you are following along live, install `menstrualcycleR` **before** the session.
-That step needs the network, and conference wifi is where these things go wrong.
+That is everything. `mgcv` ships with R, and `ggplot2` comes along as a `menstrualcycleR`
+dependency. Be aware that on a fresh R installation this pulls roughly 60 packages and
+takes minutes, not seconds. If it offers to update other packages, answering "none" is
+fine. No compiler is needed on Windows or macOS.
+
+Check it worked:
+
+```r
+library(menstrualcycleR)
+packageVersion("menstrualcycleR")   # 0.1.6 or newer
+```
+
+### Step 2 — get the file
+
+Easiest, and it lands the file in your working directory rather than in Downloads:
+
+```r
+download.file(
+  "https://raw.githubusercontent.com/eisenlohrmoullab/saa-pacts-gam-symposium/main/pacts_gamm_walkthrough.Rmd",
+  "pacts_gamm_walkthrough.Rmd"
+)
+```
+
+If you would rather click: open
+[`pacts_gamm_walkthrough.Rmd`](pacts_gamm_walkthrough.Rmd) above, then use the **download
+raw file** button at the top right of the file view. Or take the whole repo with **Code →
+Download ZIP**, unzip it, and open `saa-pacts-gam-symposium.Rproj`, which sets the working
+directory for you.
+
+### Step 3 — run it
+
+Open `pacts_gamm_walkthrough.Rmd` in RStudio. Then either:
+
+- **Follow along chunk by chunk** — the green ▶ button at the top right of each grey code
+  block, working down the document. This is what we will do in the session.
+- **Run the whole thing** — the **Knit** button, or `rmarkdown::render("pacts_gamm_walkthrough.Rmd")`
+  in the Console, which produces the HTML page in about 15 seconds.
+
+The document is self-contained: it simulates its own diary data, so there is nothing to
+download, no data-access agreement, and nothing that can fail for lack of a file.
 
 ## Citing
 
