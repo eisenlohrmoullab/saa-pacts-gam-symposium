@@ -47,6 +47,9 @@ All three come from the same `.Rmd` and the same seed, so the numbers agree.
 Everything is simulated inline, so there is no dataset to download and no data-access
 step. One file, three packages, about 15 seconds to knit.
 
+Clone or download the repo and open `saa-pacts-gam-symposium.Rproj` in RStudio, which
+sets the working directory for you. Then, in the Console:
+
 ```r
 install.packages(c("mgcv", "ggplot2"))                    # mgcv ships with base R already
 remotes::install_github("eisenlohrmoullab/menstrualcycleR")

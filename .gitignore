@@ -1,0 +1,17 @@
+# R session / build artefacts
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# knitr intermediates. The FINAL renders are committed on purpose:
+#   pacts_gamm_walkthrough.md + pacts_gamm_walkthrough_files/  (GitHub displays these)
+#   docs/pacts_gamm_walkthrough.html                            (GitHub Pages serves this)
+# Only the throwaway middle steps are ignored.
+*.knit.md
+*.utf8.md
+*_cache/
+
+# OS / editor noise
+.DS_Store
+*.swp
