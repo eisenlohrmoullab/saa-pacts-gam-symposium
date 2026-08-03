@@ -5,8 +5,12 @@ Assessment 2026, Vienna, Austria.
 
 ## PACTS scaling and cyclic GAMMs: a walkthrough
 
-**[Read the rendered walkthrough →](https://eisenlohrmoullab.github.io/saa-pacts-gam-symposium/pacts_gamm_walkthrough.html)**
-· source: [`pacts_gamm_walkthrough.Rmd`](pacts_gamm_walkthrough.Rmd)
+**[Read it here, figures and all →](pacts_gamm_walkthrough.md)** — renders right in GitHub,
+nothing to install.
+
+Also available as a [styled web page](https://eisenlohrmoullab.github.io/saa-pacts-gam-symposium/pacts_gamm_walkthrough.html)
+(collapsible code blocks), and as the runnable source,
+[`pacts_gamm_walkthrough.Rmd`](pacts_gamm_walkthrough.Rmd).
 
 Prepared by Tory Eisenlohr-Moul, PhD, and adapted from the larger `menstrualcycleR`
 vignette, ["Getting started with `menstrualcycleR`"](https://eisenlohrmoullab.github.io/menstrualcycleR/articles/menstrualcycleR-overview.html),
@@ -27,6 +31,16 @@ twice, problem-first:
 The pair is the point. The people, the outcome, and the model structure are identical
 across Steps 1 and 4; only the definition of cycle time changes. Misalignment does not
 produce an obviously wrong answer. It produces a clean null that one would believe.
+
+### The three copies
+
+| File | What it is |
+|---|---|
+| [`pacts_gamm_walkthrough.md`](pacts_gamm_walkthrough.md) | Rendered output with the figures inline. GitHub displays it directly, so this is the one to click if you just want to read it. |
+| [`docs/pacts_gamm_walkthrough.html`](docs/pacts_gamm_walkthrough.html) | The full styled version, with collapsible code blocks and every figure embedded in the single file. Read it on [the web page](https://eisenlohrmoullab.github.io/saa-pacts-gam-symposium/pacts_gamm_walkthrough.html); GitHub serves `.html` as raw source rather than rendering it. |
+| [`pacts_gamm_walkthrough.Rmd`](pacts_gamm_walkthrough.Rmd) | The source. Knit it or step through the chunks. |
+
+All three come from the same `.Rmd` and the same seed, so the numbers agree.
 
 ### Running it yourself
 
